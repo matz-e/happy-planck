@@ -5,7 +5,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,BSPC, \
            LCTL,   A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,QUOT, \
            LSFT,   Z,   X,   C,   V,   B,   N,   M,COMM, DOT,SLSH,FN20, \
-           LCTL,LALT,RALT,LGUI, FN1, SPC, SPC, FN2,LALT,RGUI,  UP,RGHT),
+           LCTL,LALT,LEFT,LGUI, FN1, SPC, SPC, FN2,FN21,RGHT,  UP,RGHT),
 
     /* 1: FN 1 */
     KEYMAP(FN3,  FN4, FN5, FN6, FN7, FN8, FN9,FN10,FN11,FN12,FN13, DEL, \
@@ -48,6 +48,7 @@ const action_t PROGMEM fn_actions[] = {
     [18] = ACTION_MODS_KEY(MOD_LSFT, KC_LBRC),
     [19] = ACTION_MODS_KEY(MOD_LSFT, KC_RBRC),
     [20] = ACTION_MODS_TAP_KEY(MOD_RSFT, KC_ENT),
+    [21] = ACTION_MODS_TAP_KEY(MOD_LALT, KC_RALT),
 };
 
 
